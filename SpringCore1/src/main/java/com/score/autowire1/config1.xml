@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- Define the Answer bean -->
+  <bean class="com.score.autowire1.Answer" name="answer">
+    <property name="ans1" value="Java is a platform independent"></property>
+    <property name="ans2" value="Java is a robust language"></property>
+    <property name="ans3" value="Spring is a framework of Java enterprise"></property>
+  </bean>
+
+  <!-- Define the Question bean and autowire the Answer by type -->
+  <bean class="com.score.autowire1.Question" name="q1" autowire="byType">
+    <property name="que1" value="What is Java?"></property>
+  </bean>
+
+</beans>

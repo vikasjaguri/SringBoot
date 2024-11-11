@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">   
+
+ 
+ 	<bean class ="" name = "jdbcTemplate"/>
+ 	
+ 	
+ 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.3.32</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.37</version>
+</dependency>
+  
+  	
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+ 	
+    <bean class="com.springcore.Student" id="student1">
+    	<property name="Sid">
+    		<value>216</value>
+    	</property>    	
+    	<property name="Sname">
+    		<value>Ajin</value>
+    	</property>
+    	
+    </bean>
+    
+       <bean class="com.springcore.CI.Person" id="person1">
+       	<constructor-arg value="101" type="int"></constructor-arg>
+       	<constructor-arg value="AJIN K JAMES"></constructor-arg>
+       
+       </bean>
+</beans>
+
